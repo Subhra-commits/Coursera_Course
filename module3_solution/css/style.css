@@ -1,0 +1,306 @@
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("background.jpg");
+	background-color: #61122f;
+
+}
+
+.text-center{
+	text-align: center;
+	color: #fff;
+}
+
+/*** HEADER ***/
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-brand {
+  font-size: 2em;
+  border: 0 0 10px 10px;
+  color: #FFFFFF;
+  font-family: 'Yeon Sung', cursive;
+}
+
+#header-nav {
+  border: 0;
+  background-color: #F6B319;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.nav-header {
+  background-color: #FFFFFF;
+}
+
+.nav-brand {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
+#nav-list {
+  color: white;
+}
+
+hr {
+  border-color: white;
+}
+
+.item {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#logo-img{
+	background: url(../images/logo.png) no-repeat;
+	height: 100px;
+	width: 100px;
+	margin: 20px 15px 0 0;
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+	text-transform: capitalize;	
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+#nav-list{
+	margin-top: 15px;
+}
+
+#nav-list a{
+	color: #61122f;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background-color: #e7e7e7;
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+}
+
+#phone{
+	margin-top: 5px;
+}
+
+#phone a{ /*Phone number*/
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#phone div{ /*Food on call*/
+	text-align: right;
+	color: #557c3e;
+}
+
+
+/*** END OF HEADER ***/
+
+/*** HOME PAGE ***/
+
+/* .container .jumbotron{
+	padding: 0;
+	box-shadow: 0 0 50px #3f0c1f;
+	border: 2px solid black;
+} */
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+}
+
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#chicken-div>section, #prawn-div>section, #sushi-div>section {
+	border:	1px solid black;
+	background-color: #00fa9a;
+	width: 100%;
+	height: auto;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 125%;
+	color: black;
+	position: relative;
+	overflow: auto;
+}
+
+#chicken, #prawn, #sushi {
+	
+	text-align: center;
+	width: 30%;
+	margin-left: 34%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+	background-color: #D67C7C;
+}
+
+#prawn {
+	background-color: #008b8b;
+}
+
+#sushi {
+	background-color: #8B0000;
+	color: white;
+}
+
+#chicken-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#prawn-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#sushi-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*** END OF HOME PAGE ***/
+
+
+/*** Start of footer ***/
+
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #333;
+	border-top: 0;
+	color: white;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+
+#hours, #address{
+	line-height: 2;
+}
+
+#hours>span, #address>span, #testimonials>span{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#hours>p, #address p{
+	color: #dc143c;
+	font-size: .9em;
+	line-height: 1.8em;
+}
+
+#address p{
+	color: #ff6347;
+}
+
+#testimonials{
+	font-style: italic;
+}
+
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
+/*** End of Footer ***/
+
+/*** Medium Devices ***/
+@media(min-width: 992px) and (max-width: 1199px){
+
+}
+
+/*** Extra small devices ***/
+@media(max-width: 767px){
+	.navbar-brand{
+		padding-top: 15px;
+		height: 80px;
+	}
+
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 8vw;
+	}
+
+	#call-btn{
+		font-size: 1.5em;
+		display: block;
+		margin: 0 20px;
+		padding: 10px;
+		border: 2px solid #fff;
+		background-color: #F6B319;
+		color: #61122f;
+	}
+
+	#xs-deliver{
+		margin-top: 5px;
+		font-size: 1.2em;
+		letter-spacing: 0.1em;
+		text-transform: capitalize;
+	}
+
+	.panel-footer section{
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+
+	.panel-footer hr{
+		width: 100%;
+	}
+}
+
+/*** Super extra small devices (e.g. moto G4, ihone 4 etc.) ***/
+
+@media(max-width: 480px){
+	#chicken, #prawn, #sushi{
+		font-size: 5vw;
+	}
+
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 10vw;
+	}
+
+}
